@@ -1,13 +1,11 @@
 import React from "react";
-// import "./App.css";
-// import styles from "./styles";
 import mainimg from "./main.jpg";
 import styled from "styled-components";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 
-function Landing() {
+export default function Landing() {
   return (
     <Background>
       <ContactButton>Let's Talk</ContactButton>
@@ -29,8 +27,6 @@ function Landing() {
   );
 }
 
-export default Landing;
-
 const Background = styled.div`
   background-image: url(${mainimg});
   background-color: #f2eeef;
@@ -40,8 +36,6 @@ const Background = styled.div`
   background-repeat: no-repeat;
   justify-content: left;
   background-color: #f2eeef;
-  position: absolute;
-  z-index: -1;
 `;
 
 const Wrapper = styled.div`
