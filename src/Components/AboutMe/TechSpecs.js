@@ -1,20 +1,33 @@
 import React from "react";
 import aboutimg from "./aboutimg.jpg";
 import styled from "styled-components";
-// import aboutstyles from "./aboutstyles";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
-export default function CardAbout() {
+export default function TechSpecs() {
   return (
     <Card>
       <Wrapper>
-        <CardTitle>FRONT END DEVELOPER</CardTitle>
+        <CardTitle>TECH SPEC SHEET</CardTitle>
         <CardText>
-          I merged my creative design background with my technical experience to
-          build eye catching & functional products for my clients.
+          <Row>
+            <Col>
+              HTML
+              <br></br>
+              CSS <br></br>
+              JavaScript <br></br>
+              React
+            </Col>
+            <Col>
+              Bootstrap <br></br>
+              Materialize <br></br>
+              Github - Version Control <br></br>+ always learning <br></br>{" "}
+            </Col>
+          </Row>
         </CardText>
       </Wrapper>
       <CenterDiv>
-        <GreenButton>Learn More</GreenButton>
+        <GreenButton>Download Resume</GreenButton>
       </CenterDiv>
     </Card>
   );
@@ -24,7 +37,6 @@ const Card = styled.div`
   border: 1px solid #6d9165;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
-  margin-bottom: 2%;
   width: 95%;
 `;
 
@@ -38,13 +50,13 @@ const CardTitle = styled.h2`
   letter-spacing: 2px;
   color: #388e71;
   text-align: center;
-  padding: 20px 0 20px 0;
+  padding: 10px 0 20px 0;
 `;
 
 const CardText = styled.p`
   font-size: 8pt;
   font-weight: 200;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   color: #707070;
   text-align: left;
 `;

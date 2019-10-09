@@ -41,13 +41,14 @@ const Background = styled.div`
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  justify-content: center;
 `;
 
 const Welcome = styled.h1`
   font-size: 45pt !important;
   color: #707070;
   font-weight: 200;
-  margin-top: 60%;
   margin-bottom: 0 !important;
 `;
 

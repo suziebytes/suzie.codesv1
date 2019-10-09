@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import CardAbout from "./CardAbout";
+import TechSpecs from "./TechSpecs";
 
 export default function AboutMe() {
   return (
@@ -14,9 +15,17 @@ export default function AboutMe() {
           <Col lg="5">
             <Wrapper>
               <CardAbout />
+              <TechSpecs />
             </Wrapper>
           </Col>
-          <Col lg="8"></Col>
+
+          <Col lg="8">
+            <div
+              style={{ background: "red", color: "white", fontSize: "30pt" }}
+            >
+              why isn't this in the column next to the cards i made ?{" "}
+            </div>
+          </Col>
         </Row>
       </Container>
     </Background>
@@ -33,6 +42,7 @@ const Background = styled.div`
 
 const Wrapper = styled.div`
   display: flex;
-  align-items: center;
+  justify-content: center;
   height: 100vh;
+  flex-direction: column;
 `;
