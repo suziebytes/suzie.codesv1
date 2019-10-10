@@ -1,4 +1,8 @@
 import React from "react";
+import self from "./self.png";
+import styled from "styled-components";
+import Image from "react-bootstrap/Image";
+
 import {
   Card,
   CardTitle,
@@ -12,6 +16,9 @@ export default function CardAbout() {
   return (
     <Card>
       <Wrapper>
+        <CenterDiv>
+          <Img src={self} />
+        </CenterDiv>
         <CardTitle>FRONT END DEVELOPER</CardTitle>
         <CardText>
           I merged my creative design background with my technical experience to
@@ -19,8 +26,12 @@ export default function CardAbout() {
         </CardText>
       </Wrapper>
       <CenterDiv>
-        <GreenButton>Learn More</GreenButton>
+        <GreenButton>Get Personal</GreenButton>
       </CenterDiv>
     </Card>
   );
 }
+
+const Img = styled.img`
+  width: 175px;
+`;

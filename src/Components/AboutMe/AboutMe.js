@@ -7,7 +7,6 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import CardAbout from "./CardAbout";
 import TechSpecs from "./TechSpecs";
-import { CenterDiv } from "./aboutstyles";
 
 export default function AboutMe() {
   return (
@@ -51,7 +50,7 @@ const Svg = styled.div`
   background-position: center;
   background-image: url(${graphic});
   height: 100vh;
-  width: 80%;
+  width: 88%;
   background-size: contain;
   background-repeat: no-repeat;
 `;
