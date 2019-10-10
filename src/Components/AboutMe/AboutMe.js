@@ -1,11 +1,13 @@
 import React from "react";
 import aboutimg from "./aboutimg.jpg";
+import graphic from "./graphic.png";
 import styled from "styled-components";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import CardAbout from "./CardAbout";
 import TechSpecs from "./TechSpecs";
+import { CenterDiv } from "./aboutstyles";
 
 export default function AboutMe() {
   return (
@@ -18,13 +20,8 @@ export default function AboutMe() {
               <TechSpecs />
             </Wrapper>
           </Col>
-
-          <Col lg="8">
-            <div
-              style={{ background: "red", color: "white", fontSize: "30pt" }}
-            >
-              why isn't this in the column next to the cards i made ?{" "}
-            </div>
+          <Col lg="7" style={{ justifyContent: "center", display: "flex" }}>
+            <Svg></Svg>
           </Col>
         </Row>
       </Container>
@@ -45,4 +42,16 @@ const Wrapper = styled.div`
   justify-content: center;
   height: 100vh;
   flex-direction: column;
+  align-items: center;
+`;
+
+const Svg = styled.div`
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  background-image: url(${graphic});
+  height: 100vh;
+  width: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
 `;
