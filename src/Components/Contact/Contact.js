@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import bgimg from "./bgimg.jpg";
-import { Button, Talk, CenterDiv } from "./contactstyles";
+import { Button, Talk, CenterDiv, FormWrapper } from "./contactstyles";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
@@ -10,10 +10,12 @@ import Form from "./Form";
 export default function Contact() {
   return (
     <Background>
-      <Container>
+      <FormWrapper>
         <Row>
           <Col lg="6">
-            <Talk>let's talk</Talk>
+            <CenterDiv>
+              <Talk>let's talk</Talk>
+            </CenterDiv>
             <CenterDiv>
               <Form />
             </CenterDiv>
@@ -23,7 +25,7 @@ export default function Contact() {
           </Col>
           <Col lg="6"> </Col>
         </Row>
-      </Container>
+      </FormWrapper>
     </Background>
   );
 }

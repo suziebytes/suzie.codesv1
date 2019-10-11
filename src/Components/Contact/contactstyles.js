@@ -74,8 +74,9 @@ export const Select = styled.select`
 export const Option = styled.option`
   font-size: 9pt;
   font-weight: 100;
+  padding: 2px 0 2px 0;
   letter-spacing: 0.5px;
-  color: #388e71;
+  color: #707070;
   text-align: center;
   width: 200px;
   vertical-align: middle;
@@ -97,15 +98,30 @@ export const TextArea = styled.textarea`
   width: 410px;
   height: 125px;
   font-size: 9pt;
+  padding: 10px;
   margin: 5px;
   font-weight: 100;
   letter-spacing: 0.5px;
   color: #707070;
-  text-align: center;
+  text-align: left;
   border: 1px solid #fcc8c8;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  &: focus {
+    outline: none;
+    transform: scale(1.02);
+    border: 1px dashed #fcc8c8;
+  }
 `;
 
 export const CenterDiv = styled.div`
   display: flex;
   justify-content: center;
+`;
+
+export const FormWrapper = styled.div`
+  padding: 15% 1% 10% 0%;
 `;

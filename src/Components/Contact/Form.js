@@ -11,7 +11,7 @@ export default function Form() {
       </Row>
       <Row>
         <Select name="project" placeholder="Project Type" size="3">
-          <Option value="" disabled="disabled" selected="selected">
+          <Option value="" disabled="disabled">
             Please Select One
           </Option>
           <Option value="1">Design</Option>
