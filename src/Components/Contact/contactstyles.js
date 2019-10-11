@@ -4,6 +4,7 @@ export const Button = styled.button`
   font-size: 9pt;
   color: white;
   padding: 5px 0 5px 0;
+  margin: 10px;
   background: #e0b3b3;
   border: 1px solid white;
   width: 150px;
@@ -23,13 +24,11 @@ export const Button = styled.button`
   }
 `;
 
-const Form = styled.div;
-
 export const Input = styled.input`
   font-size: 9pt;
   font-weight: 100;
   letter-spacing: 0.5px;
-  color: #388e71;
+  color: #707070;
   text-align: center;
   border: 1px solid #fcc8c8;
   width: 200px;
@@ -52,7 +51,7 @@ export const Select = styled.select`
   font-size: 9pt;
   font-weight: 100;
   letter-spacing: 0.5px;
-  color: #388e71;
+  color: #707070;
   text-align: center;
   border: 1px solid #fcc8c8;
   width: 200px;
@@ -79,7 +78,6 @@ export const Option = styled.option`
   color: #388e71;
   text-align: center;
   width: 200px;
-
   vertical-align: middle;
   transform: translateZ(0);
   backface-visibility: hidden;
@@ -95,9 +93,19 @@ export const Talk = styled.h1`
   margin-bottom: 0 !important;
 `;
 
-export const Wrapper = styled.div`
+export const TextArea = styled.textarea`
+  width: 410px;
+  height: 125px;
+  font-size: 9pt;
+  margin: 5px;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  color: #707070;
+  text-align: center;
+  border: 1px solid #fcc8c8;
+`;
+
+export const CenterDiv = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
 `;

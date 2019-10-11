@@ -7,7 +7,7 @@ import Container from "react-bootstrap/Container";
 
 export default function Portfolio() {
   return (
-    <Container fluid>
+    <div>
       <Row>
         <Col lg="9" className="px-0 ">
           <Computer />
@@ -16,6 +16,6 @@ export default function Portfolio() {
           <Gallery />{" "}
         </Col>
       </Row>
-    </Container>
+    </div>
   );
 }

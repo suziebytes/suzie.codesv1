@@ -1,5 +1,5 @@
 import React from "react";
-import { Input, Select, Option } from "./contactstyles";
+import { Input, Select, Option, TextArea, FormWrapper } from "./contactstyles";
 import Row from "react-bootstrap/Row";
 
 export default function Form() {
@@ -21,7 +21,7 @@ export default function Form() {
         <Input type="text" name="budget" placeholder="Budget" />
       </Row>
       <Row>
-        <Input type="text" name="comment" placeholder="Project Type" />
+        <TextArea placeholder="Additional Information"></TextArea>
       </Row>
     </div>
   );

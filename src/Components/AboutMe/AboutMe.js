@@ -10,21 +10,23 @@ import TechSpecs from "./TechSpecs";
 
 export default function AboutMe() {
   return (
-    <Background>
-      <Container>
-        <Row>
-          <Col lg="5">
-            <Wrapper>
-              <CardAbout />
-              <TechSpecs />
-            </Wrapper>
-          </Col>
-          <Col lg="7" style={{ justifyContent: "center", display: "flex" }}>
-            <Svg></Svg>
-          </Col>
-        </Row>
-      </Container>
-    </Background>
+    <div>
+      <Background>
+        <Container>
+          <Row>
+            <Col lg="5">
+              <Wrapper>
+                <CardAbout />
+                <TechSpecs />
+              </Wrapper>
+            </Col>
+            <Col lg="7" style={{ justifyContent: "center", display: "flex" }}>
+              <Svg></Svg>
+            </Col>
+          </Row>
+        </Container>
+      </Background>
+    </div>
   );
 }
 
