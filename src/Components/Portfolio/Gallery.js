@@ -18,12 +18,12 @@ export default function Gallery() {
 }
 
 const Wrapper = styled.div`
-  padding-top: 25px;
+  padding: 25px 10px 25px 10px;
   min-height: 100vh;
   background: #f2eeef;
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 `;
 
 const CardTitle = styled.h2`

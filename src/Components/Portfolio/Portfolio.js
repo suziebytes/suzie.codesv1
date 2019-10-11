@@ -9,7 +9,7 @@ export default function Portfolio() {
   return (
     <Container fluid>
       <Row>
-        <Col lg="9" className="px-0">
+        <Col lg="9" className="px-0 ">
           <Computer />
         </Col>
         <Col lg="3" className="px-0">
