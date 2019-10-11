@@ -13,17 +13,14 @@ export default function Computer() {
 
 const Desktop = styled.div`
   background-image: url(${desktop});
-  min-height: 100vh;
   width: 100%;
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
 `;
 
 const Red = styled.div`
-  top: 10%;
-  left: 24.5%;
-  height: 49%;
-  width: 66%;
-  background-color: red;
+  border: red;
+  background-color: pink;
   position: absolute;
 `;

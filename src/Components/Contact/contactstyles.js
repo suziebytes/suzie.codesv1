@@ -110,7 +110,7 @@ export const TextArea = styled.textarea`
   -moz-osx-font-smoothing: grayscale;
   transition-duration: 0.3s;
   transition-property: transform;
-  &: focus {
+  &:focus {
     outline: none;
     transform: scale(1.02);
     border: 1px dashed #fcc8c8;

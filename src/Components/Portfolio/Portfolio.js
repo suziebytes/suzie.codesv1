@@ -4,18 +4,20 @@ import Col from "react-bootstrap/Col";
 import Computer from "./Computer";
 import Gallery from "./Gallery";
 import Container from "react-bootstrap/Container";
+import GridSample from "./GridSample";
 
 export default function Portfolio() {
   return (
     <div>
-      <Row>
+      {/* <Row>
         <Col lg="9" className="px-0 ">
-          <Computer />
+          <GridSample />
         </Col>
         <Col lg="3" className="px-0">
           <Gallery />{" "}
         </Col>
-      </Row>
+      </Row> */}
+      <GridSample />
     </div>
   );
 }
