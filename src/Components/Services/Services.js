@@ -13,7 +13,7 @@ export default function Services() {
     <Background>
       <Container>
         <Row>
-          <Col lg="4" className="px-0 mx-0">
+          <Col lg="4" className="px-0 mx-0" style={{ zIndex: "5" }}>
             <Design />
           </Col>
           <Col lg="4" className="px-0 mx-0">
@@ -40,8 +40,10 @@ const Background = styled.div`
 
 const Image = styled.div`
   background-image: url(${suzbg});
-  width: 100%;
-  height: 100%;
+  width: 600px;
+  height: 600px;
+  margin: -160px;
   background-size: contain;
   background-repeat: no-repeat;
+  position: absolute;
 `;

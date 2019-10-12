@@ -35,7 +35,7 @@ export default function Develop() {
             <Col>
               <Tag>
                 Everyone is unique. <br></br>
-                Let us help you tell your story.
+                Let us help you tell your story.<br></br>
               </Tag>
             </Col>
           </Row>
