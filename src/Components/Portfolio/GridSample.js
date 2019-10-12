@@ -1,13 +1,17 @@
 import React from "react";
 import desktop from "./desktop.png";
 import styled from "styled-components";
-import toki from "./toki.png";
+import login from "./login.mp4";
 
 export default function GridSample() {
   return (
     <Grid>
       <Computer>
-        <Video />
+        <Video>
+          <video>
+            <source src="login.mp4" type="video/mp4" />
+          </video>
+        </Video>
       </Computer>
     </Grid>
   );
@@ -19,6 +23,7 @@ const Grid = styled.div`
   grid-template-rows: 1fr;
   grid-templatea-areas: "computer carousel";
   width: 100%;
+  height: 100vh;
 `;
 //coursel will be an import of <Gallery/>
 
@@ -29,11 +34,11 @@ const Computer = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 3.9% 10% 10% 10%; 
+  padding: 3.9% 10% 29% 9.5%; 
 `;
 
-const Video = styled.div`
-  background-image: url(${toki});
+const Video = styled.video`
   width: 100%;
   height: 100%;
+  border: 1px solid orange;
 `;
