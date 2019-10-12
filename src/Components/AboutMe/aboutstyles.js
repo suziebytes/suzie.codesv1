@@ -55,6 +55,7 @@ export const Button = styled.button`
 
 export const GreenButton = styled(Button)`
   border: 1px solid #64c7a6;
+  background: #1abc9c;
   margin: 5px 0 10px 0;
   font-size: 8pt;
 `;
