@@ -26,10 +26,11 @@ export default function Services() {
 }
 
 const Background = styled.div`
+  display: flex;
+  align-items: center;
   background-image: url(${servicesimg});
-  height: 600px;
+  height: 100vh;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 8% 0px 5% 0px;
 `;

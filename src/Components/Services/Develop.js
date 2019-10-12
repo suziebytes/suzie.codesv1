@@ -12,6 +12,7 @@ import {
   Button
 } from "./servicesstyles";
 import { CenterDiv } from "../AboutMe/aboutstyles";
+import LetsTalkBtn from "./LetsTalkBtn";
 
 export default function Develop() {
   return (
@@ -40,7 +41,7 @@ export default function Develop() {
           </Row>
           <CenterDiv>
             <Row>
-              <Button>Let's Talk</Button>
+              <LetsTalkBtn />
             </Row>
           </CenterDiv>
         </Wrapper>
