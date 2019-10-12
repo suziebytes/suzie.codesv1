@@ -2,6 +2,7 @@ import React from "react";
 import self from "./self.png";
 import styled from "styled-components";
 import Image from "react-bootstrap/Image";
+import Social from "./Social";
 
 import {
   Card,
@@ -26,7 +27,8 @@ export default function CardAbout() {
         </CardText>
       </Wrapper>
       <CenterDiv>
-        <GreenButton>Get Personal</GreenButton>
+        {/* <GreenButton>Get Personal</GreenButton> */}
+        <Social />
       </CenterDiv>
     </Card>
   );

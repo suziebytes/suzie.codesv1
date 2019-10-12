@@ -10,6 +10,6 @@ export default function Suzie() {
 }
 
 const Suz = styled.img`
-  width: 100%;
+  width: 100vw;
   height: 100%px;
 `;

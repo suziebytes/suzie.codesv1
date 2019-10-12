@@ -12,11 +12,13 @@ export default function Services() {
     <Background>
       <Container>
         <Row>
-          <Col lg="4">
+          <Col lg="4" className="px-0 mx-0">
             <Design />
           </Col>
-          <Col lg="4">something in here</Col>
-          <Col lg="4">
+          <Col lg="4" className="px-0 mx-0">
+            <img src="suzbg.png" />
+          </Col>
+          <Col lg="4" className="px-0 mx-0">
             <Develop />
           </Col>
         </Row>
@@ -29,7 +31,7 @@ const Background = styled.div`
   display: flex;
   align-items: center;
   background-image: url(${servicesimg});
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
