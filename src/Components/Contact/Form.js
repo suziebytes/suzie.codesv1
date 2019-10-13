@@ -13,7 +13,7 @@ export default function Form() {
   return (
     <div>
       <form
-        action="https://mailthis.to/reorsusie@gmail.com"
+        action="https://mailthis.to/suziebytes"
         method="POST"
         encType="multipart/form-data"
       >
