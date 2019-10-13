@@ -18,9 +18,7 @@ export default function Contact() {
             </CenterDiv>
             <CenterDiv>
               <Form />
-            </CenterDiv>
-            <CenterDiv>
-              <Button>SEND</Button>
+              {/* {Form()}> */}
             </CenterDiv>
           </Col>
           <Col lg="6"> </Col>

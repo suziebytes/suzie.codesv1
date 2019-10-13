@@ -25,9 +25,9 @@ export default function TechSpecs() {
               React
             </Col>
             <Col>
+              Git <br></br>
               Bootstrap <br></br>
-              Materialize <br></br>
-              Github - Version Control <br></br>+ always learning <br></br>{" "}
+              Materialize <br></br>+ always learning <br></br>{" "}
             </Col>
           </Row>
         </CardText>

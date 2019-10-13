@@ -58,6 +58,7 @@ export const GreenButton = styled(Button)`
   background: #1abc9c;
   margin: 5px 0 10px 0;
   font-size: 8pt;
+  color: white;
 `;
 
 export const CenterDiv = styled.div`
