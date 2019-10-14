@@ -42,7 +42,7 @@ export default function Develop() {
           </Row>
           <CenterDiv>
             <Row>
-              <LetsTalkBtn href="Contact" />
+              <LetsTalkBtn />
             </Row>
           </CenterDiv>
         </Wrapper>

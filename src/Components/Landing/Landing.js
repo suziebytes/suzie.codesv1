@@ -8,7 +8,7 @@ import Container from "react-bootstrap/Container";
 export default function Landing() {
   return (
     <Background>
-      <ContactButton>Let's Talk</ContactButton>
+      <ContactButton href="#contact">Let's Talk</ContactButton>
       <Container>
         <Row>
           <Col lg="7"></Col>
@@ -18,7 +18,7 @@ export default function Landing() {
                 Hi,<br></br> I'm Suzie.
               </Welcome>
               <Tag>i make, break & fix things.</Tag>
-              <Button>Learn More</Button>
+              <Button href="#about">Learn More</Button>
             </Wrapper>
           </Col>
         </Row>
@@ -60,14 +60,16 @@ const Tag = styled.span`
   padding: 0 0 25px 0;
 `;
 
-const Button = styled.button`
+const Button = styled.a`
   font-size: 11pt;
+  text-align: center;
   color: #707070;
   padding: 5px 0 5px 0;
   border: 1px solid #fcc8c8;
   background: rgba(255, 255, 255, 0.6);
   width: 150px;
   display: inline-block;
+  text-decoration: none !important;
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -77,9 +79,14 @@ const Button = styled.button`
   transition-property: transform;
   &: hover {
     transform: scale(1.05);
+    color: #707070;
+    text-decoration: none !important;
   }
   &: focus {
     outline: none;
+  }
+  &: visited, active {
+    color: #707070;
   }
 `;
 
@@ -91,6 +98,7 @@ const ContactButton = styled(Button)`
   border: 1.5px solid #fcc8c8;
   margin: 10px 15px 0 0;
   float: right;
+
   &:hover {
     transform: scale(0.9);
   }

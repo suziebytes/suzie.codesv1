@@ -7,25 +7,28 @@ import Col from "react-bootstrap/Col";
 // import Container from "react-bootstrap/Container";
 import CardAbout from "./CardAbout";
 import TechSpecs from "./TechSpecs";
+import ScrollableAnchor from "react-scrollable-anchor";
 
 export default function AboutMe() {
   return (
     <div>
-      <Background>
-        <Container>
-          <Row>
-            <Col lg="5">
-              <Wrapper>
-                <CardAbout />
-                <TechSpecs />
-              </Wrapper>
-            </Col>
-            <Col lg="7" style={{ justifyContent: "center", display: "flex" }}>
-              <Svg></Svg>
-            </Col>
-          </Row>
-        </Container>
-      </Background>
+      <ScrollableAnchor id={"about"}>
+        <Background>
+          <Container>
+            <Row>
+              <Col lg="5">
+                <Wrapper>
+                  <CardAbout />
+                  <TechSpecs />
+                </Wrapper>
+              </Col>
+              <Col lg="7" style={{ justifyContent: "center", display: "flex" }}>
+                <Svg></Svg>
+              </Col>
+            </Row>
+          </Container>
+        </Background>
+      </ScrollableAnchor>
     </div>
   );
 }

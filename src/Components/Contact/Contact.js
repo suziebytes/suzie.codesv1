@@ -1,30 +1,31 @@
 import React from "react";
 import styled from "styled-components";
 import bgimg from "./bgimg.jpg";
-import { Button, Talk, CenterDiv, FormWrapper } from "./contactstyles";
+import { Talk, CenterDiv, FormWrapper } from "./contactstyles";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
 import Form from "./Form";
+import ScrollableAnchor from "react-scrollable-anchor";
 
 export default function Contact() {
   return (
-    <Background>
-      <FormWrapper>
-        <Row>
-          <Col lg="6">
-            <CenterDiv>
-              <Talk>let's talk</Talk>
-            </CenterDiv>
-            <CenterDiv>
-              <Form />
-              {/* {Form()}> */}
-            </CenterDiv>
-          </Col>
-          <Col lg="6"> </Col>
-        </Row>
-      </FormWrapper>
-    </Background>
+    <ScrollableAnchor id={"contact"}>
+      <Background>
+        <FormWrapper>
+          <Row>
+            <Col lg="6">
+              <CenterDiv>
+                <Talk>let's talk</Talk>
+              </CenterDiv>
+              <CenterDiv>
+                <Form />
+              </CenterDiv>
+            </Col>
+            <Col lg="6"> </Col>
+          </Row>
+        </FormWrapper>
+      </Background>
+    </ScrollableAnchor>
   );
 }
 

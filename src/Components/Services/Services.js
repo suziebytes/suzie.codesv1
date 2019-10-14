@@ -38,14 +38,24 @@ const Background = styled.div`
   background-repeat: no-repeat;
 `;
 
+// const Image = styled.div`
+//   background-image: url(${suzbg});
+//   width: 700px;
+//   height: 700px;
+//   margin: -172px;
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   position: absolute;
+// `;
+
 const Image = styled.div`
   background-image: url(${suzbg});
-  width: 700px;
-  height: 700px;
-  margin: -172px;
+  width: 100px;
+  height: 100px;
+  transform: scale(7);
+  margin: 117px;
   background-size: contain;
   background-repeat: no-repeat;
-  position: absolute;
 `;
 
 const Container = styled.div`
