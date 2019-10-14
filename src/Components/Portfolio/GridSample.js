@@ -1,16 +1,13 @@
 import React from "react";
 import desktop from "./desktop.png";
 import styled from "styled-components";
-import login from "./login.mp4";
 
 export default function GridSample() {
   return (
     <Grid>
       <Computer>
-        <Video>
-          <video>
-            <source src="login.mp4" type="video/mp4" />
-          </video>
+        <Video autoplay muted>
+          <source src="qa.mp4" type="video/mp4" />
         </Video>
       </Computer>
     </Grid>
@@ -23,18 +20,25 @@ const Grid = styled.div`
   grid-template-rows: 1fr;
   grid-templatea-areas: "computer carousel";
   width: 100%;
-  height: 100vh;
 `;
 //coursel will be an import of <Gallery/>
+
+// const Computer = styled.div`
+//   grid-area: "computer";
+//   background-image: url(${desktop});
+//   height: 100vh
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   padding: 3.9% 10% 29% 9.5%;
+// `;
 
 const Computer = styled.div`
   grid-area: "computer";
   background-image: url(${desktop});
-  height: 100vh
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 3.9% 10% 29% 9.5%; 
+  padding: 3.9% 10% 29% 9.5%;
 `;
 
 const Video = styled.video`

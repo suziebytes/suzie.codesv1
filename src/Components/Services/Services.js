@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-// import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Design from "./Design";

@@ -12,7 +12,7 @@ export default function Landing() {
       <Container>
         <Row>
           <Col lg="7"></Col>
-          <Col sm="12" lg="5">
+          <Col lg="5">
             <Wrapper>
               <Welcome>
                 Hi,<br></br> I'm Suzie.
