@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
 `;
 
 export const CardTitle = styled.h2`
-  font-size: 13pt;
+  font-size: 15pt;
   font-weight: 500;
   letter-spacing: 2px;
   color: #388e71;
@@ -22,15 +22,15 @@ export const CardTitle = styled.h2`
 `;
 
 export const CardText = styled.p`
-  font-size: 8.5pt;
+  font-size: 10.5pt;
   font-weight: 200;
   letter-spacing: 1px;
   color: #707070;
-  text-align: left;
+  text-align: center;
 `;
 
 export const Button = styled.button`
-  font-size: 9pt;
+  font-size: 11pt;
   color: #707070;
   padding: 5px 0 5px 0;
   border: 1px solid #fcc8c8;
@@ -57,7 +57,6 @@ export const GreenButton = styled(Button)`
   border: 1px solid #64c7a6;
   background: #1abc9c;
   margin: 5px 0 10px 0;
-  font-size: 8pt;
   color: white;
 `;
 

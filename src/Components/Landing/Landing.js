@@ -53,7 +53,7 @@ const Welcome = styled.h1`
 `;
 
 const Tag = styled.span`
-  font-size: 8pt !important;
+  font-size: 10.5pt !important;
   color: #707070;
   letter-spacing: 2px;
   font-weight: 200;
@@ -61,12 +61,11 @@ const Tag = styled.span`
 `;
 
 const Button = styled.button`
-  font-size: 9pt;
+  font-size: 11pt;
   color: #707070;
   padding: 5px 0 5px 0;
   border: 1px solid #fcc8c8;
   background: rgba(255, 255, 255, 0.6);
-  border: 1px solid #fcc8c8;
   width: 150px;
   display: inline-block;
   vertical-align: middle;
@@ -87,9 +86,8 @@ const Button = styled.button`
 const ContactButton = styled(Button)`
   background: none;
   color: #707070;
-  padding: 5px 15px 5px 15px;
-  font-size: 10pt;
-  border-radius: 8px 8px 8px 8px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 8px;
   border: 1.5px solid #fcc8c8;
   margin: 10px 15px 0 0;
   float: right;

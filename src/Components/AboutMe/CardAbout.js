@@ -4,14 +4,7 @@ import styled from "styled-components";
 import Image from "react-bootstrap/Image";
 import Social from "./Social";
 
-import {
-  Card,
-  CardTitle,
-  CardText,
-  Wrapper,
-  GreenButton,
-  CenterDiv
-} from "./aboutstyles";
+import { Card, CardTitle, CardText, Wrapper, CenterDiv } from "./aboutstyles";
 
 export default function CardAbout() {
   return (
@@ -35,5 +28,5 @@ export default function CardAbout() {
 }
 
 const Img = styled.img`
-  width: 175px;
+  width: 200px;
 `;

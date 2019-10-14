@@ -4,7 +4,7 @@ import graphic from "./graphic.png";
 import styled from "styled-components";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
+// import Container from "react-bootstrap/Container";
 import CardAbout from "./CardAbout";
 import TechSpecs from "./TechSpecs";
 
@@ -55,4 +55,8 @@ const Svg = styled.div`
   width: 88%;
   background-size: contain;
   background-repeat: no-repeat;
+`;
+
+const Container = styled.div`
+  padding: 3% 10% 3% 10%;
 `;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
-  font-size: 9pt;
+  font-size: 11pt;
   color: white;
   padding: 5px 0 5px 0;
   margin: 10px;
@@ -25,7 +25,7 @@ export const Button = styled.button`
 `;
 
 export const Input = styled.input`
-  font-size: 9pt;
+  font-size: 11pt;
   font-weight: 100;
   letter-spacing: 0.5px;
   color: #707070;
@@ -48,7 +48,7 @@ export const Input = styled.input`
 `;
 
 export const Select = styled.select`
-  font-size: 9pt;
+  font-size: 10pt;
   font-weight: 100;
   letter-spacing: 0.5px;
   color: #707070;
@@ -72,7 +72,7 @@ export const Select = styled.select`
 `;
 
 export const Option = styled.option`
-  font-size: 9pt;
+  font-size: 11pt;
   font-weight: 100;
   padding: 2px 0 2px 0;
   letter-spacing: 0.5px;
@@ -97,7 +97,7 @@ export const Talk = styled.h1`
 export const TextArea = styled.textarea`
   width: 410px;
   height: 125px;
-  font-size: 9pt;
+  font-size: 11pt;
   padding: 10px;
   margin: 5px;
   font-weight: 100;

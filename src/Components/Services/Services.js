@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Container from "react-bootstrap/Container";
+// import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Design from "./Design";
@@ -40,10 +40,14 @@ const Background = styled.div`
 
 const Image = styled.div`
   background-image: url(${suzbg});
-  width: 600px;
-  height: 600px;
-  margin: -160px;
+  width: 700px;
+  height: 700px;
+  margin: -172px;
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
+`;
+
+const Container = styled.div`
+  padding: 3% 10% 3% 10%;
 `;

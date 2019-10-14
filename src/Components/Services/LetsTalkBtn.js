@@ -3,37 +3,38 @@ import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import styled from "styled-components";
 
 export const Button = styled.button`
-font-size: 9pt;
-color: white;
-padding: 5px 0 5px 0;
-border: 1px solid #d5a2a3;
-background: #F87B7D
-width: 150px;
-display: inline-block;
-vertical-align: middle;
-transform: translateZ(0);
-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-backface-visibility: hidden;
--moz-osx-font-smoothing: grayscale;
-transition-duration: 0.3s;
-transition-property: transform;
-&: hover {
-  transform: scale(1.05);
-}
-&: focus {
-  outline: none;
-}
+  font-size: 11pt;
+  color: white;
+  padding: 5px 0 5px 0;
+  margin-bottom: 10px;
+  border: 1px solid #e88385;
+  background: #e9b1b2;
+  width: 150px;
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  &: hover {
+    transform: scale(1.05);
+  }
+  &: focus {
+    outline: none;
+  }
 `;
 
 export const renderTooltip = props => (
   <div
     {...props}
     style={{
-      fontSize: "8pt",
+      fontSize: "10pt",
       backgroundColor: "white",
-      border: "1px solid #d5a2a3",
+      border: "1px solid #e9b1b2",
       padding: "2px 10px",
-      color: "#F87B7D",
+      color: "#707070",
       borderRadius: 3,
 
       ...props.style
@@ -46,7 +47,7 @@ export const renderTooltip = props => (
 export default function LetsTalkBtn() {
   return (
     <OverlayTrigger
-      placement="bottom"
+      placement="right"
       delay={{ show: 250, hide: 400 }}
       overlay={renderTooltip}
     >
