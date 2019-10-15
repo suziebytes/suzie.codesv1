@@ -31,7 +31,6 @@ export const Input = styled.input`
   color: #707070;
   text-align: center;
   border: 1px solid #fcc8c8;
-  width: 200px;
   padding: 5px;
   margin: 5px;
   vertical-align: middle;
@@ -48,16 +47,15 @@ export const Input = styled.input`
 `;
 
 export const Select = styled.select`
-  font-size: 10pt;
+  font-size: 11pt;
   font-weight: 100;
   letter-spacing: 0.5px;
   color: #707070;
   text-align: center;
   border: 1px solid #fcc8c8;
-  width: 200px;
-  height: 30px;
+  height: 33px;
   padding: 5px;
-  margin: 5px;
+  margin: 4px;
   vertical-align: middle;
   transform: translateZ(0);
   backface-visibility: hidden;
@@ -74,11 +72,11 @@ export const Select = styled.select`
 export const Option = styled.option`
   font-size: 11pt;
   font-weight: 100;
-  padding: 2px 0 2px 0;
   letter-spacing: 0.5px;
+  padding: 5px;
+  margin: 5px;
   color: #707070;
   text-align: center;
-  width: 200px;
   vertical-align: middle;
   transform: translateZ(0);
   backface-visibility: hidden;
@@ -95,11 +93,10 @@ export const Talk = styled.h1`
 `;
 
 export const TextArea = styled.textarea`
-  width: 410px;
   height: 125px;
   font-size: 11pt;
+  width: 100%;
   padding: 10px;
-  margin: 5px;
   font-weight: 100;
   letter-spacing: 0.5px;
   color: #707070;
@@ -123,5 +120,5 @@ export const CenterDiv = styled.div`
 `;
 
 export const FormWrapper = styled.div`
-  padding: 15% 1% 10% 0%;
+  padding: 15% 0% 10% 0%;
 `;

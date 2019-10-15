@@ -4,6 +4,8 @@ import bgimg from "./bgimg.jpg";
 import { Talk, CenterDiv, FormWrapper } from "./contactstyles";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+
 import Form from "./Form";
 import ScrollableAnchor from "react-scrollable-anchor";
 
@@ -12,17 +14,16 @@ export default function Contact() {
     <ScrollableAnchor id={"contact"}>
       <Background>
         <FormWrapper>
-          <Row>
-            <Col lg="6">
-              <CenterDiv>
-                <Talk>let's talk</Talk>
-              </CenterDiv>
-              <CenterDiv>
+          <Container>
+            <Talk>let's talk</Talk>
+
+            <Row>
+              <Col lg="6">
                 <Form />
-              </CenterDiv>
-            </Col>
-            <Col lg="6"> </Col>
-          </Row>
+              </Col>
+            </Row>
+            <Col md={{ span: 6, offset: 6 }}> </Col>
+          </Container>
         </FormWrapper>
       </Background>
     </ScrollableAnchor>

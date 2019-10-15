@@ -8,20 +8,24 @@ import {
   CenterDiv
 } from "./contactstyles";
 import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
 
 export default function Form() {
   return (
-    <div>
-      <form
-        action="https://mailthis.to/suziebytes"
-        method="POST"
-        encType="multipart/form-data"
-      >
-        <Row>
+    <form
+      action="https://mailthis.to/suziebytes"
+      method="POST"
+      encType="multipart/form-data"
+    >
+      <Row>
+        <Col lg="12">
           <Input type="text" name="name" placeholder="Name" required />
           <Input type="text" name="email" placeholder="Email" required />
-        </Row>
-        <Row>
+        </Col>
+      </Row>
+      <Row>
+        <Col lg="12">
           <Select name="project" placeholder="Project Type" size="3">
             <Option value="" disabled="disabled">
               Please Select One
@@ -31,21 +35,26 @@ export default function Form() {
             <Option value="3">Other</Option>
           </Select>
           <Input type="text" name="budget" placeholder="Budget" />
-        </Row>
-        <Row>
+        </Col>
+      </Row>
+      <Row>
+        <Col lg="12">
           <TextArea
             name="message"
             placeholder="Additional Information"
           ></TextArea>
-        </Row>
-        <CenterDiv>
-          <Row>
+        </Col>
+      </Row>
+
+      <Row>
+        <Col>
+          <CenterDiv>
             <Button type="submit" value="Send">
               SEND
             </Button>
-          </Row>
-        </CenterDiv>
-      </form>
-    </div>
+          </CenterDiv>
+        </Col>
+      </Row>
+    </form>
   );
 }

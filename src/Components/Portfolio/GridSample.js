@@ -6,8 +6,8 @@ export default function GridSample() {
   return (
     <Grid>
       <Computer>
-        <Video autoplay muted>
-          <source src="qa.mp4" type="video/mp4" />
+        <Video>
+          <source autoplay muted src="qa.mp4" type="video/mp4" />
         </Video>
       </Computer>
     </Grid>
@@ -16,33 +16,27 @@ export default function GridSample() {
 
 const Grid = styled.div`
   display: grid;
+  background: black;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr;
   grid-templatea-areas: "computer carousel";
   width: 100%;
+  @media (max-width: 400px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+  }
 `;
 //coursel will be an import of <Gallery/>
-
-// const Computer = styled.div`
-//   grid-area: "computer";
-//   background-image: url(${desktop});
-//   height: 100vh
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-//   padding: 3.9% 10% 29% 9.5%;
-// `;
 
 const Computer = styled.div`
   grid-area: "computer";
   background-image: url(${desktop});
   background-position: center;
   background-size: cover;
-  padding: 3.9% 10% 29% 9.5%;
+  padding: 4% 10% 32% 10%;
 `;
 
 const Video = styled.video`
   width: 100%;
   height: 100%;
-  border: 1px solid orange;
 `;

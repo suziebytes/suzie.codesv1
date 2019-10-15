@@ -9,7 +9,7 @@ export const Card = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  buimargin: 20px;
+  margin: 20px;
 `;
 
 export const CardTitle = styled.h2`

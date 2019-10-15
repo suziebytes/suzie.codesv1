@@ -49,12 +49,16 @@ const Background = styled.div`
 
 const Image = styled.div`
   background-image: url(${suzbg});
-  width: 100px;
-  height: 100px;
-  transform: scale(7);
-  margin: 117px;
-  background-size: contain;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
   background-repeat: no-repeat;
+  @media (min-width: 441px) {
+    transform: scale(2.3);
+  }
+  @media (max-width: 440px) {
+    transform: scale(1.2);
+  }
 `;
 
 const Container = styled.div`

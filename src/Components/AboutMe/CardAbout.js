@@ -3,7 +3,7 @@ import self from "./self.png";
 import styled from "styled-components";
 import Image from "react-bootstrap/Image";
 import Social from "./Social";
-
+import Container from "react-bootstrap/Container";
 import { Card, CardTitle, CardText, Wrapper, CenterDiv } from "./aboutstyles";
 
 export default function CardAbout() {
@@ -28,5 +28,6 @@ export default function CardAbout() {
 }
 
 const Img = styled.img`
-  width: 200px;
+  width: 50%;
+  height: 50%;
 `;
