@@ -31,10 +31,43 @@ export const Video = styled.video`
 `;
 
 export const CardTitle = styled.h2`
-  font-size: 20pt;
+  font-size: 28pt;
   font-weight: 500;
   letter-spacing: 2px;
   color: #e88385;
   text-align: center;
-  padding: 20px 0 20px 0;
+  padding: 20px 0 10px 0;
+`;
+
+export const Display = styled.div`
+  display: flex;
+  flex-direction: column;
+  background: #f2eeef;
+  @media (max-width: 450) {
+    flex-direction: row;
+  }
+`;
+export const Img = styled.img`
+  height: 100%;
+  width: 80%;
+  border: 3px solid white;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, .7);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  &: hover {
+    transform: scale(1.05);
+`;
+
+export const ImageDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+`;
+
+export const Line = styled.hr`
+  width: 70%;
+  border: 1.5px solid #f88181;
 `;

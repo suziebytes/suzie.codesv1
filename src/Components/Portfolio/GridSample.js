@@ -1,25 +1,58 @@
 import React from "react";
-import desktop from "./desktop.png";
-import styled from "styled-components";
-import { Grid, Computer, Video, CardTitle } from "./portfoliostyles";
+import {
+  Grid,
+  Computer,
+  Video,
+  CardTitle,
+  Display,
+  Img,
+  ImageDiv,
+  Line
+} from "./portfoliostyles";
 
 export default function GridSample() {
-  //collection of all videos in div
+  const video = React.createRef();
+
   function Thumbs() {
     return (
       <Display>
         <CardTitle>RECENT WORK</CardTitle>
+        <Line></Line>
         <ImageDiv>
-          <Img src="./qahousescreen.png" />
+          <Img
+            onClick={e =>
+              (video.current.src =
+                "https://static.suzie.codes/file/suzie-portfolio/qa.mp4")
+            }
+            src="https://static.suzie.codes/file/suzie-portfolio/qahousescreen.png"
+          />
         </ImageDiv>
         <ImageDiv>
-          <Img src="./loginscreen.png" />
+          <Img
+            onClick={e =>
+              (video.current.src =
+                "https://static.suzie.codes/file/suzie-portfolio/login.mp4")
+            }
+            src="https://static.suzie.codes/file/suzie-portfolio/loginscreen.png"
+          />
         </ImageDiv>
         <ImageDiv>
-          <Img src="./atomicscreen.png" />
+          <Img
+            onClick={e =>
+              (video.current.src =
+                "https://static.suzie.codes/file/suzie-portfolio/atomic.mp4")
+            }
+            src="https://static.suzie.codes/file/suzie-portfolio/atomicscreen.png"
+          />
         </ImageDiv>
         <ImageDiv>
-          <Img src="./candlesscreen.png" />
+          <Img
+            onClick={e =>
+              (video.current.src =
+                "https://static.suzie.codes/file/suzie-portfolio/candles.mp4")
+            }
+            src="https://static.suzie.codes/file/suzie-portfolio/candlesscreen.png"
+          />
         </ImageDiv>
       </Display>
     );
@@ -28,31 +61,14 @@ export default function GridSample() {
   return (
     <Grid>
       <Computer>
-        <Video autoplay>
-          <source autoplay src="qa.mp4" type="video/mp4" />
+        <Video autoPlay muted loop ref={video}>
+          <source
+            src="https://static.suzie.codes/file/suzie-portfolio/qa.mp4"
+            type="video/mp4"
+          />
         </Video>
       </Computer>
-
       <Thumbs />
     </Grid>
   );
 }
-
-const Display = styled.div`
-  display: flex;
-  flex-direction: column;
-  background: #f2eeef;
-  @media (max-width: 450) {
-    flex-direction: row;
-  }
-`;
-const Img = styled.img`
-  height: 100%;
-  width: 80%;
-`;
-
-const ImageDiv = styled.div`
-  display: flex;
-  justify-content: center;
-  padding: 10px 0 10px 0;
-`;

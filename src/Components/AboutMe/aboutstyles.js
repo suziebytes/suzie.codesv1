@@ -29,9 +29,9 @@ export const CardText = styled.p`
   text-align: center;
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
   font-size: 11pt;
-  color: #707070;
+  color: white;
   padding: 5px 0 5px 0;
   border: 1px solid #fcc8c8;
   background: rgba(255, 255, 255, 0.6);
@@ -47,9 +47,15 @@ export const Button = styled.button`
   transition-property: transform;
   &: hover {
     transform: scale(1.05);
+    color: white;
+    text-decoration: none !important;
   }
   &: focus {
     outline: none;
+  }
+  &: active, visited {
+    color: white;
+    text-decoration: none;
   }
 `;
 
@@ -57,7 +63,8 @@ export const GreenButton = styled(Button)`
   border: 1px solid #64c7a6;
   background: #1abc9c;
   margin: 5px 0 10px 0;
-  color: white;
+  text-align: center;
+  }
 `;
 
 export const CenterDiv = styled.div`

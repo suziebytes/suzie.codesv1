@@ -33,7 +33,9 @@ export default function TechSpecs() {
         </CardText>
       </Wrapper>
       <CenterDiv>
-        <GreenButton>Download Resume</GreenButton>
+        <GreenButton href="./suzie-resume-no phone.pdf" target="_blank">
+          Download Resume
+        </GreenButton>
       </CenterDiv>
     </Card>
   );

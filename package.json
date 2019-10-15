@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && rclone sync build b2:suzie-portfolio -P",
+    "build": "PUBLIC_URL='https://static.suzie.codes/file/suzie-portfolio/' react-scripts build && rclone sync build b2:suzie-portfolio -P",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
