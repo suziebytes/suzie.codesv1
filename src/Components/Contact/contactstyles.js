@@ -26,6 +26,7 @@ export const Button = styled.button`
 
 export const Input = styled.input`
   font-size: 11pt;
+  width: 100%;
   font-weight: 100;
   letter-spacing: 0.5px;
   color: #707070;
@@ -54,6 +55,7 @@ export const Select = styled.select`
   text-align: center;
   border: 1px solid #fcc8c8;
   height: 33px;
+  width: 100%;
   padding: 5px;
   margin: 4px;
   vertical-align: middle;
@@ -94,6 +96,7 @@ export const Talk = styled.h1`
 
 export const TextArea = styled.textarea`
   height: 125px;
+  margin: 5px;
   font-size: 11pt;
   width: 100%;
   padding: 10px;

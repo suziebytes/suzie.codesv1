@@ -19,13 +19,15 @@ export default function Form() {
       encType="multipart/form-data"
     >
       <Row>
-        <Col lg="12">
+        <Col lg="6">
           <Input type="text" name="name" placeholder="Name" required />
+        </Col>
+        <Col lg="6">
           <Input type="text" name="email" placeholder="Email" required />
         </Col>
       </Row>
       <Row>
-        <Col lg="12">
+        <Col lg="6">
           <Select name="project" placeholder="Project Type" size="3">
             <Option value="" disabled="disabled">
               Please Select One
@@ -34,6 +36,8 @@ export default function Form() {
             <Option value="2">Website Build</Option>
             <Option value="3">Other</Option>
           </Select>
+        </Col>
+        <Col lg="6">
           <Input type="text" name="budget" placeholder="Budget" />
         </Col>
       </Row>
