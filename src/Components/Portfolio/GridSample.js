@@ -23,7 +23,7 @@ const Grid = styled.div`
   @media (max-width: 370px) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-templatea-areas: "computer" "gallery";
+    grid-templatea-areas: "Computer" "Gallery";
   }
   @media (min-width: 400px) {
     grid-template-columns: 3fr 1fr;

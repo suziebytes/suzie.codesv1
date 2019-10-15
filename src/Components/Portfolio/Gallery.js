@@ -1,33 +1,36 @@
 import React from "react";
 import styled from "styled-components";
 
+const thumbs = [
+  { src: "./qahousescreen.png", id: 1 },
+  { src: "./loginscreen.png", id: 2 },
+  { src: "./atomicscreen.png", id: 3 },
+  { src: "./atomicscreen.png", id: 4 }
+];
+
+function createGallery() {}
+
 export default function Gallery() {
   return (
     <Wrapper>
       <CardTitle>RECENT WORK</CardTitle>
-      <button>demo1</button>
-      <button>demo2</button>
-      <span>
-        {" "}
-        this should be a react gallery that scrolls to display varying portfolio
-        thumbnail/screenshots. should i have a file with all the thumbnails here
-        in an array?
-      </span>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.div`
-  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
   background: #f2eeef;
+  grid-template-areas: "CardTitle Thumbs"
   align-content: center;
 `;
 
 const CardTitle = styled.h2`
-  font-size: 13pt;
+  font-size: 20pt;
   font-weight: 500;
   letter-spacing: 2px;
-  color: #388e71;
+  color: #e88385;
   text-align: center;
   padding: 20px 0 20px 0;
 `;
