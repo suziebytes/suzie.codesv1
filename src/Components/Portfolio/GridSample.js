@@ -1,46 +1,58 @@
 import React from "react";
 import desktop from "./desktop.png";
 import styled from "styled-components";
-import Gallery from "./Gallery";
+import { Grid, Computer, Video, CardTitle } from "./portfoliostyles";
 
 export default function GridSample() {
+  //collection of all videos in div
+  function Thumbs() {
+    return (
+      <Display>
+        <CardTitle>RECENT WORK</CardTitle>
+        <ImageDiv>
+          <Img src="./qahousescreen.png" />
+        </ImageDiv>
+        <ImageDiv>
+          <Img src="./loginscreen.png" />
+        </ImageDiv>
+        <ImageDiv>
+          <Img src="./atomicscreen.png" />
+        </ImageDiv>
+        <ImageDiv>
+          <Img src="./candlesscreen.png" />
+        </ImageDiv>
+      </Display>
+    );
+  }
+
   return (
     <Grid>
       <Computer>
-        <Video>
-          <source autoplay muted src="qa.mp4" type="video/mp4" />
+        <Video autoplay>
+          <source autoplay src="qa.mp4" type="video/mp4" />
         </Video>
       </Computer>
-      <Gallery />
+
+      <Thumbs />
     </Grid>
   );
 }
 
-const Grid = styled.div`
-  display: grid;
-  background: black;
-  width: 100%;
-  @media (max-width: 370px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-templatea-areas: "Computer" "Gallery";
-  }
-  @media (min-width: 400px) {
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr;
-    grid-templatea-areas: "computer gallery";
+const Display = styled.div`
+  display: flex;
+  flex-direction: column;
+  background: #f2eeef;
+  @media (max-width: 450) {
+    flex-direction: row;
   }
 `;
-
-const Computer = styled.div`
-  grid-area: "computer";
-  background-image: url(${desktop});
-  background-position: center;
-  background-size: cover;
-  padding: 4% 10% 32% 10%;
-`;
-
-const Video = styled.video`
-  width: 100%;
+const Img = styled.img`
   height: 100%;
+  width: 80%;
+`;
+
+const ImageDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
 `;
