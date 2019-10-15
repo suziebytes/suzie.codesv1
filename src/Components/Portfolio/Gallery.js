@@ -18,11 +18,8 @@ export default function Gallery() {
 }
 
 const Wrapper = styled.div`
-  padding: 25px 10px 25px 10px;
   min-height: 100vh;
   background: #f2eeef;
-  display: flex;
-  flex-direction: column;
   align-content: center;
 `;
 

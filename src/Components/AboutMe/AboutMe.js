@@ -58,6 +58,9 @@ const Svg = styled.div`
   width: 88%;
   background-size: contain;
   background-repeat: no-repeat;
+  @media (max-width: 414px) {
+    display: none;
+  }
 `;
 
 const Container = styled.div`

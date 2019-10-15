@@ -9,14 +9,6 @@ import GridSample from "./GridSample";
 export default function Portfolio() {
   return (
     <div>
-      {/* <Row>
-        <Col lg="9" className="px-0 ">
-          <GridSample />
-        </Col>
-        <Col lg="3" className="px-0">
-          <Gallery />{" "}
-        </Col>
-      </Row> */}
       <GridSample />
     </div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import desktop from "./desktop.png";
 import styled from "styled-components";
+import Gallery from "./Gallery";
 
 export default function GridSample() {
   return (
@@ -10,6 +11,7 @@ export default function GridSample() {
           <source autoplay muted src="qa.mp4" type="video/mp4" />
         </Video>
       </Computer>
+      <Gallery />
     </Grid>
   );
 }
@@ -17,16 +19,18 @@ export default function GridSample() {
 const Grid = styled.div`
   display: grid;
   background: black;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr;
-  grid-templatea-areas: "computer carousel";
   width: 100%;
-  @media (max-width: 400px) {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr;
+  @media (max-width: 370px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-templatea-areas: "computer" "gallery";
+  }
+  @media (min-width: 400px) {
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-templatea-areas: "computer gallery";
   }
 `;
-//coursel will be an import of <Gallery/>
 
 const Computer = styled.div`
   grid-area: "computer";

@@ -5,6 +5,7 @@ import AboutMe from "./Components/AboutMe/AboutMe";
 import Services from "./Components/Services/Services";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Contact from "./Components/Contact/Contact";
+import GridSample from "./Components/Portfolio/GridSample";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Landing />
       <AboutMe />
       <Services />
-      <Portfolio />
+      <GridSample />
       <Contact />
     </div>
   );

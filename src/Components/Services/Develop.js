@@ -22,10 +22,9 @@ export default function Develop() {
           <CardTitle>DEVELOP</CardTitle>
           <Line />
           <CardText>
-            It’s all about execution.
-            <br></br>Let’s take our website design blueprint and build something
-            for the world to experience. Leave the hard work to us and allow us
-            to create a responsive website.
+            It’s all about execution. Let’s take our website design blueprint
+            and build something for the world to experience. Leave the hard work
+            to us and allow us to create a responsive website.
           </CardText>
         </Wrapper>
       </Card>
