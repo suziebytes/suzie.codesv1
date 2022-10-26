@@ -1,5 +1,6 @@
 {
   "name": "suzie.codesv1",
+  "homepage": "https://suziebytes.github.io/suzie.codesv1",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +12,7 @@
     "react-scrollable-anchor": "^0.6.1",
     "styled-components": "^4.4.0"
   },
+ 
   "scripts": {
     "start": "react-scripts start",
     "build": "PUBLIC_URL='https://static.suzie.codes/file/suzie-portfolio/' react-scripts build && rclone sync build b2:suzie-portfolio -P",
