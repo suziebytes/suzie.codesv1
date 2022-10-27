@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "https://suziebytes.github.io/suzie.codesv1/static/css/main.80086952.chunk.css",
+    "main.js": "https://suziebytes.github.io/suzie.codesv1/static/js/main.686cd6dd.chunk.js",
+    "main.js.map": "https://suziebytes.github.io/suzie.codesv1/static/js/main.686cd6dd.chunk.js.map",
+    "runtime-main.js": "https://suziebytes.github.io/suzie.codesv1/static/js/runtime-main.da896ff1.js",
+    "runtime-main.js.map": "https://suziebytes.github.io/suzie.codesv1/static/js/runtime-main.da896ff1.js.map",
+    "static/js/2.d452005f.chunk.js": "https://suziebytes.github.io/suzie.codesv1/static/js/2.d452005f.chunk.js",
+    "static/js/2.d452005f.chunk.js.map": "https://suziebytes.github.io/suzie.codesv1/static/js/2.d452005f.chunk.js.map",
+    "index.html": "https://suziebytes.github.io/suzie.codesv1/index.html",
+    "precache-manifest.55597a4040865b20de5e962ad19879a8.js": "https://suziebytes.github.io/suzie.codesv1/precache-manifest.55597a4040865b20de5e962ad19879a8.js",
+    "service-worker.js": "https://suziebytes.github.io/suzie.codesv1/service-worker.js",
+    "static/css/main.80086952.chunk.css.map": "https://suziebytes.github.io/suzie.codesv1/static/css/main.80086952.chunk.css.map",
+    "static/media/aboutimg.jpg": "https://suziebytes.github.io/suzie.codesv1/static/media/aboutimg.7ed3c1ed.jpg",
+    "static/media/bg.png": "https://suziebytes.github.io/suzie.codesv1/static/media/bg.4eb43c91.png",
+    "static/media/bgimg.jpg": "https://suziebytes.github.io/suzie.codesv1/static/media/bgimg.5b443bbd.jpg",
+    "static/media/desktop.png": "https://suziebytes.github.io/suzie.codesv1/static/media/desktop.b63c8186.png",
+    "static/media/graphic.png": "https://suziebytes.github.io/suzie.codesv1/static/media/graphic.cee4eb59.png",
+    "static/media/main.jpg": "https://suziebytes.github.io/suzie.codesv1/static/media/main.f7bbd086.jpg",
+    "static/media/self.png": "https://suziebytes.github.io/suzie.codesv1/static/media/self.c4291f12.png",
+    "static/media/suzbg.png": "https://suziebytes.github.io/suzie.codesv1/static/media/suzbg.70057462.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.da896ff1.js",
+    "static/js/2.d452005f.chunk.js",
+    "static/css/main.80086952.chunk.css",
+    "static/js/main.686cd6dd.chunk.js"
+  ]
+}
