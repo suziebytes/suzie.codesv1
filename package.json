@@ -5,20 +5,20 @@
   "private": true,
   "dependencies": {
     "hover.css": "^2.3.2",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
+    "react": "^16.14.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "^16.14.0",
     "react-image-gallery": "^0.9.1",
     "react-scripts": "3.2.0",
     "react-scrollable-anchor": "^0.6.1",
-    "styled-components": "^4.4.0"
+    "styled-components": "^4.4.1"
   },
- 
   "scripts": {
     "start": "react-scripts start",
     "build": "PUBLIC_URL='https://suziebytes.github.io/suzie.codesv1' react-scripts build && rclone sync build b2:suzie-portfolio -P",
     "test": "react-scripts test",
-    "eject": "react-scripts eject", 
-    "predeploy": "npm run build", 
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
@@ -37,6 +37,7 @@
     ]
   },
   "devDependencies": {
-    "react-alice-carousel": "^1.15.3"
+    "gh-pages": "^4.0.0",
+    "react-alice-carousel": "^1.19.3"
   }
 }
